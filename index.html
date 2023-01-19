@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <title>Hand Gesture Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Great+Vibes&family=Indie+Flower&family=Pacifico&family=Satisfy&family=Seymour+One&family=Yeon+Sung&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src=" https://unpkg.com/ml5@0.4.3/dist/ml5.min.js "></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+      <h1 id="heading">Hand Gesture App</h1>
+      <marquee id="marker">&#9995; &#9996; &#128406; &#128076; &#129310; &#129311; &#128077; &#128078; &#129309; &#128591; &#128075; &#129306; &#128400; &#129304; &#128072; &#128073; &#128070; &#128071; &#9757; &#9994; &#128074; &#128079; &#128588; &#128080; &#129330; </marquee>
+      <br>
+      <h1 id="following">The following 10 gestures can be identified by this app:</h1>
+      <br>
+      <br>
+      <br>
+<div class="emojiiiii">
+  1. Raised Hand     : &#9995;   <hr class="hr">
+  2. Victory Hand    : &#9996;   <hr class="hr">
+  3. Double Victory  : &#128406; <hr class="hr">
+  4. Wow Hand        : &#128076; <hr class="hr">
+  5. Crossed Fingers : &#129310; <hr class="hr">
+  6. Yo Yo Hand      : &#129311; <hr class="hr">
+  7. Thumbs Up       : &#128077; <hr class="hr">
+  8. Thumbs Down     : &#128078; <hr class="hr">
+  9. Hooray          : &#128588; <hr class="hr">
+  10.Namaste         : &#128591;
+</div>
+
+
+     <div class="col-md-4 col-sm-12 col-xs-12">
+       <h1 class="text">Camera - </h1>
+       <div id="camera" class="box"></div>
+       <br>
+       <br>
+       <button class="controls" onclick="take_Snapshot()">Take Photo</button>
+     </div>
+
+     <div class="col-md-4 col-sm-12 col-xs-12">
+      <h1 class="prediction" id="Name">         </h1>
+      <h2 class="prediction" id="prediction"></h2>
+     </div>
+     
+     <div class="col-md-4 col-sm-12 col-xs-12">
+      <h1 class="text">Captured Image - </h1>
+      <div id="result" class="box"></div>
+      <br>
+      <br>
+      <button class="controls" onclick="check()">Predict Gesture</button>
+     </div>
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
